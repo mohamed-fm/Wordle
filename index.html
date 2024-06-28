@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images.png" type="image/x-icon">
+    <title> Word Game </title>
+</head>
+<body>
+    <div class="project">
+        <h1 class="heading">Guess The Secret <span>WORD</span></h1>
+        <div class="nav">
+            <button class="btn btn-Home"><img src="Home.svg" alt="Home"></button>
+            <button class="btn btn-About"><img src="info.svg" alt="Info"></button>
+        </div>
+        <div class="inputs">
+            <div class="rows" id="row-1"></div>
+            <div class="rows" id="row-2"></div>
+            <div class="rows" id="row-3"></div>
+            <div class="rows" id="row-4"></div>
+            <div class="rows" id="row-5"></div>
+            <div class="rows" id="row-6"></div>
+        </div>
+        <div class="keyboard">
+            <div class="row-one"></div>
+            <div class="row-tow"></div>
+            <div class="row-three"></div>
+        </div>
+        <div class="submit">
+            <button class="btn-long">SUBMIT WORD</button>
+        </div>
+        <div class="about">
+            <span class="del">X</span>
+            <h1>Game Rules</h1>
+            <div class="green">
+                <div class="circle"></div>
+                <p>The Letter Is Right And In Place</p>
+            </div>
+            <div class="orange">
+                <div class="circle"></div>
+                <p>The Letter Is Right And Not In Place</p>
+            </div>
+            <div class="gray">
+                <div class="circle"></div>
+                <p>The Letter Is Wrong</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

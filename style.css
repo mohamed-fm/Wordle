@@ -1,0 +1,207 @@
+:root{
+    --grean:#279e64;
+    --orange:#f0912a;
+    --gray:#464646;
+    --gray-light:#46464625;
+    --backgroundColor:#f5f0ec ;
+    --red-light:#ff00a3b0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: var(--orange);
+}
+img::selection{
+    background-color: transparent;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100svb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundColor);
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 100px auto;
+}
+.heading{
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    text-align: center;
+    color: var(--orange);
+}
+.heading span{
+    color: var(--grean);
+    font-size: 30px;
+    
+}
+
+svg{
+    max-width: 100%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+.nav .btn{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--backgroundColor);
+}
+.nav .btn img{
+    width: 30px;
+    height: 30px;
+}
+.nav .btn-Home{
+    background-color: var(--gray);
+}
+.nav .btn-About{
+    cursor: help;
+}
+.nav .btn-About img{
+    width: 40px;
+    height: 40px;
+}
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    gap: 5px 10px;
+    margin: 30px auto 0 auto;
+}
+.inputs .rows{
+    display: flex;
+    gap: 5px 10px;
+
+}
+input{
+    width: 60px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: white;
+    color: var(--gray);
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 30px;
+}
+.keyboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3px;
+    padding: 10px;
+}
+.keyboard div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6px;
+}
+.keyboard .key{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: var(--gray-light);
+    cursor: pointer;
+}
+.row-three{
+    margin-left: 95px;
+}
+.keyboard #key-26{
+    width: 90px;
+}
+#delete{
+    width: 35px;
+    height: 35px;
+    color: red;
+}
+.btn-long{
+    width: 100%;
+    padding: 12px 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--grean);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+.about{
+    width: 340px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--gray);
+    margin: auto;
+    z-index: 1000;
+    background-color: #eee;
+    position: absolute;
+    left: 129px;
+    top: 77px;
+    display: none;
+}
+.about .del{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color: var(--red-light);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.about div{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex-basis: 1;
+    font-size: 16px;
+}
+
+.about div div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+.about .green div{
+    background: var(--grean);
+}
+.about .orange div{
+    background: var(--orange);
+}
+.about .gray div{
+    background: var(--gray);
+}
